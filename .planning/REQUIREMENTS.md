@@ -19,7 +19,7 @@
 - [ ] **PROF-01**: User can set a custom daily water intake goal in ml or oz
 - [ ] **PROF-02**: User can toggle between ml and oz as their preferred display unit
 - [ ] **PROF-03**: App suggests a daily goal based on the user's body weight during onboarding (body weight × 0.033L formula)
-- [ ] **PROF-04**: App guides the user through onboarding (goal → unit → first reminder time) on first launch in under 60 seconds
+- [ ] **PROF-04**: App guides the user through goal and unit selection on first launch in under 60 seconds
 
 ### Drink Logging
 
@@ -113,4 +113,4 @@
 
 ---
 *Requirements defined: 2026-02-26*
-*Last updated: 2026-02-26 after roadmap creation*
+*Last updated: 2026-02-26 — PROF-04 scoped to goal + unit selection only; reminder time setup moved to Phase 4 (NOTIF-02)*
