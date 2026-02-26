@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-26)
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-02-26 — Roadmap created; phases derived from 21 v1 requirements
+Plan: 1 of 3 in current phase (awaiting Task 3 human-verify checkpoint)
+Status: In progress — checkpoint:human-verify
+Last activity: 2026-02-26 — Plan 01-01 tasks 1-2 complete; awaiting app launch verification
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 8%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
+- Total plans completed: 0 (01-01 in progress — checkpoint)
 - Average duration: —
 - Total execution time: —
 
@@ -27,7 +27,7 @@ Progress: [░░░░░░░░░░] 0%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1 in progress | ~8 min | — |
 
 **Recent Trend:**
 - Last 5 plans: —
@@ -47,6 +47,8 @@ Recent decisions affecting current work:
 - [Phase 1]: Configure Supabase client with `storage: AsyncStorage`, `persistSession: true`, `detectSessionInUrl: false`
 - [Phase 1]: Enable RLS on all tables and test with two separate accounts before any feature work proceeds
 - [Phase 4]: Use `DailyTriggerInput` for all reminder scheduling (not one-off per-day notifications) — keeps iOS under 64-notification limit
+- [01-01]: NativeWind v4 installed (not skipped) — peer deps compatible with Expo 54/RN 0.81
+- [01-01]: Supabase client uses throw Error at module load if env vars missing (fail-fast pattern)
 
 ### Pending Todos
 
@@ -56,10 +58,10 @@ None yet.
 
 - [Phase 3]: Chart library (react-native-gifted-charts vs. victory-native) not yet selected — evaluate at Phase 3 start based on RN 0.81 compatibility and bundle size at that time
 - [Phase 4]: Physical device required for notification testing — iOS Simulator does not support local notifications; confirm both iOS and Android 13+ devices are available before Phase 4 begins
-- [Phase 1]: NativeWind v4 + Expo 54 compatibility is MEDIUM confidence — verify before installing; fallback to React Native StyleSheet if not confirmed
+- [Phase 1, Plan 01]: NativeWind v4.2.2 installed successfully with Expo 54 / RN 0.81.5 — peer deps only required tailwindcss >3.3.0 (RESOLVED)
 
 ## Session Continuity
 
 Last session: 2026-02-26
-Stopped at: Roadmap written; ready to plan Phase 1
+Stopped at: Plan 01-01 checkpoint:human-verify — Tasks 1-2 committed, awaiting user to run `npx expo start` and confirm app launches
 Resume file: None

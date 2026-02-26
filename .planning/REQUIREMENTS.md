@@ -10,7 +10,7 @@
 ### Authentication
 
 - [ ] **AUTH-01**: User can sign up with email and password
-- [ ] **AUTH-02**: User can log in with email and password and stay logged in across app restarts
+- [x] **AUTH-02**: User can log in with email and password and stay logged in across app restarts
 - [ ] **AUTH-03**: User can log out from any screen
 - [ ] **AUTH-04**: User can reset their password via an email link
 
@@ -85,7 +85,7 @@
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | AUTH-01 | Phase 1 | Pending |
-| AUTH-02 | Phase 1 | Pending |
+| AUTH-02 | Phase 1 | Complete |
 | AUTH-03 | Phase 1 | Pending |
 | AUTH-04 | Phase 1 | Pending |
 | PROF-01 | Phase 1 | Pending |
