@@ -67,7 +67,7 @@ completed: 2026-02-26
 - **Duration:** ~8 min
 - **Started:** 2026-02-26T15:08:47Z
 - **Completed:** 2026-02-26T15:17:00Z
-- **Tasks:** 2 of 3 (Task 3 is a human-verify checkpoint — awaiting user confirmation)
+- **Tasks:** 3 of 3 (all complete — Task 3 checkpoint approved by user)
 - **Files modified:** 6
 
 ## Accomplishments
@@ -83,9 +83,7 @@ Each task was committed atomically:
 
 1. **Task 1: Install dependencies and configure environment** - `f39964a` (chore)
 2. **Task 2: Create Supabase client singleton and wire URL polyfill** - `3c7c4fa` (feat)
-3. **Task 3: Verify setup** — checkpoint:human-verify (not yet committed — awaiting user verification)
-
-**Plan metadata:** (pending final docs commit after checkpoint approval)
+3. **Task 3: Verify setup** — checkpoint:human-verify approved by user 2026-02-26
 
 ## Files Created/Modified
 - `lib/supabase.ts` - Supabase client singleton with AsyncStorage adapter, detectSessionInUrl: false
@@ -114,21 +112,11 @@ None - plan executed exactly as written. NativeWind was compatible and installed
 
 The plan's automated verify command for `react-native-url-polyfill` uses `node -e "require(...)"` which fails with Node.js v22 because the package uses ESM imports that reference React Native internals. This is expected behavior — the package is designed for Metro bundler (React Native), not Node.js. The package directory exists in node_modules and functions correctly in the Expo/Metro context.
 
-## User Setup Required
-
-**Task 3 is a human-verify checkpoint that requires:**
-1. Open `.env` at the project root — confirm real Supabase credentials are present (URL and ANON_KEY)
-2. Run: `npx expo start` from the project directory
-3. Confirm the app launches without "URL is not a constructor" or AsyncStorage errors
-4. Confirm `git status` does NOT show `.env` as an untracked file
-
-The .env already contains real credentials (EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY). The anon key is safe to use in the mobile client. Do NOT use the service_role key.
-
 ## Next Phase Readiness
 - Supabase client ready for auth operations (Plans 01-02, 01-03)
 - All dependencies available for state management (zustand), data fetching (react-query), forms (react-hook-form)
 - NativeWind available for Tailwind-based styling throughout the app
-- Task 3 checkpoint required before proceeding to Plan 02
+- Plan 01-01 complete — proceed to Plan 01-02 (Supabase schema, RLS, auth flow)
 
 ---
 *Phase: 01-foundation*
