@@ -29,12 +29,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. User can log out from any screen and be returned to the auth flow
   4. User can reset their password via an email link and log back in with a new password
   5. User completes onboarding in under 60 seconds: the app suggests a goal based on body weight, the user sets their goal and preferred unit (ml or oz), and reaches the home screen
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Project setup — dependencies, Supabase client, URL polyfill, AsyncStorage session adapter
-- [ ] 01-02: Supabase schema, RLS, and auth flow (sign up, sign in, sign out, password reset)
-- [ ] 01-03: Onboarding screens — body weight input, goal suggestion (weight × 0.033L), unit toggle, first-launch routing
+- [ ] 01-01-PLAN.md — Project setup: dependencies, Supabase client, URL polyfill, AsyncStorage session adapter, NativeWind/StyleSheet decision
+- [ ] 01-02-PLAN.md — Supabase schema, RLS, handle_new_user trigger, auth flow (sign up, sign in, sign out, password reset)
+- [ ] 01-03-PLAN.md — Hydration math library, onboarding screens (goal suggestion, unit selection), first-launch routing
 
 ### Phase 2: Core Logging Loop
 **Goal**: Users can log every drink they take, see their progress toward today's goal in real time, and delete mistakes — making the core action of the app fast and satisfying.
@@ -90,7 +90,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/3 | Not started | - |
+| 1. Foundation | 0/3 | Planned | - |
 | 2. Core Logging Loop | 0/2 | Not started | - |
 | 3. History and Trends | 0/2 | Not started | - |
 | 4. Notifications, Settings, and Sync | 0/3 | Not started | - |
